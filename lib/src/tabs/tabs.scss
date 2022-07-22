@@ -59,7 +59,6 @@ nav {
 }
 
 /* Tab Label Active State */
-
 [data-tab]:nth-of-type(1):checked ~ nav [data-tab-label]:nth-of-type(1),
 [data-tab]:nth-of-type(2):checked ~ nav [data-tab-label]:nth-of-type(2),
 [data-tab]:nth-of-type(3):checked ~ nav [data-tab-label]:nth-of-type(3),
@@ -105,7 +104,6 @@ nav {
 }
 
 /* Tab Panel Active State */
-
 [data-tab]:nth-of-type(1):checked ~ [data-tab-panel]:nth-of-type(1),
 [data-tab]:nth-of-type(2):checked ~ [data-tab-panel]:nth-of-type(2),
 [data-tab]:nth-of-type(3):checked ~ [data-tab-panel]:nth-of-type(3),
