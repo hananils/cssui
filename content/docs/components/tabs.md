@@ -20,23 +20,23 @@ Click tabs to swap between content that is broken into logical sections. Tabs co
   <link rel="stylesheet" href="tabs.css">
 
   <div data-tabs role="tablist" aria-label="Sample tabs">
-      <input id="tab1" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel1" checked="checked"/>
-      <input id="tab2" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel2"/>
-      <input id="tab3" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel3"/>
-      <nav>
-          <label for="tab1" data-tab-label>First Tab</label>
-          <label for="tab2" data-tab-label>Second Tab</label>
-          <label for="tab3" data-tab-label>Third Tab</label>
-      </nav>
-      <section id="tab-panel1" data-tab-panel role="tabpanel" aria-labelledby="tab1">
-          First Tab Panel
-      </section>
-      <section id="tab-panel2" data-tab-panel role="tabpanel" aria-labelledby="tab2">
-          Second Tab Panel
-      </section>
-      <section id="tab-panel3" data-tab-panel role="tabpanel" aria-labelledby="tab3">
-          Third Tab Panel
-      </section>
+    <input id="tab1" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel1" checked="checked"/>
+    <input id="tab2" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel2"/>
+    <input id="tab3" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel3"/>
+    <nav>
+      <label for="tab1" data-tab-label>First Tab</label>
+      <label for="tab2" data-tab-label>Second Tab</label>
+      <label for="tab3" data-tab-label>Third Tab</label>
+    </nav>
+    <section id="tab-panel1" data-tab-panel role="tabpanel" aria-labelledby="tab1">
+      First Tab Panel
+    </section>
+    <section id="tab-panel2" data-tab-panel role="tabpanel" aria-labelledby="tab2">
+      Second Tab Panel
+    </section>
+    <section id="tab-panel3" data-tab-panel role="tabpanel" aria-labelledby="tab3">
+      Third Tab Panel
+    </section>
   </div>
 </div>
 
@@ -48,23 +48,23 @@ Tabs only require the following structure:
 
 ```html
 <div data-tabs role="tablist" aria-label="Sample tabs">
-    <input id="tab1" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel1" checked="checked"/>
-    <input id="tab2" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel2"/>
-    <input id="tab3" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel3"/>
-    <nav>
-        <label for="tab1" data-tab-label>First Tab</label>
-        <label for="tab2" data-tab-label>Second Tab</label>
-        <label for="tab3" data-tab-label>Third Tab</label>
-    </nav>
-    <section id="tab-panel1" data-tab-panel role="tabpanel" aria-labelledby="tab1">
-        First Tab Panel
-    </section>
-    <section id="tab-panel2" data-tab-panel role="tabpanel" aria-labelledby="tab2">
-        Second Tab Panel
-    </section>
-    <section id="tab-panel3" data-tab-panel role="tabpanel" aria-labelledby="tab3">
-        Third Tab Panel
-    </section>
+  <input id="tab1" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel1" checked="checked"/>
+  <input id="tab2" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel2"/>
+  <input id="tab3" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel3"/>
+  <nav>
+    <label for="tab1" data-tab-label>First Tab</label>
+    <label for="tab2" data-tab-label>Second Tab</label>
+    <label for="tab3" data-tab-label>Third Tab</label>
+  </nav>
+  <section id="tab-panel1" data-tab-panel role="tabpanel" aria-labelledby="tab1">
+    First Tab Panel
+  </section>
+  <section id="tab-panel2" data-tab-panel role="tabpanel" aria-labelledby="tab2">
+    Second Tab Panel
+  </section>
+  <section id="tab-panel3" data-tab-panel role="tabpanel" aria-labelledby="tab3">
+    Third Tab Panel
+  </section>
 </div>
 ```
 ## Accessibility
@@ -75,20 +75,20 @@ You can navigate tabs using keyboard by default. Press TAB it will move the focu
 List of variables used. Customize the component's design by changing or overriding these values:
 
 ```css
-  --tab-background: none;
-  --tab-label-background: #fff;
-  --tab-panel-background: #fff;
-  --tab-border-width: 1px;
-  --tab-border-hover-width: var(--tab-border-active-width);
-  --tab-border-active-width: 2px;
-  --tab-panel-border-width: var(--tab-border-width);
-  --tab-border-color: #d1d5db;
-  --tab-border-hover-color: #9ca3af;
-  --tab-border-active-color: #1d4ed8;
-  --tab-panel-border-color: none;
-  --tab-outline-color: #101010;
-  --tab-spacing: 1rem 0.5rem;
-  --tab-radius: none;
-  --tab-active-shadow: none;
-  --tab-transition: opacity 0.3s ease-in-out;
+--tab-background: none;
+--tab-label-background: #fff;
+--tab-panel-background: #fff;
+--tab-border-width: 1px;
+--tab-border-hover-width: var(--tab-border-active-width);
+--tab-border-active-width: 2px;
+--tab-panel-border-width: var(--tab-border-width);
+--tab-border-color: #d1d5db;
+--tab-border-hover-color: #9ca3af;
+--tab-border-active-color: #1d4ed8;
+--tab-panel-border-color: none;
+--tab-outline-color: #101010;
+--tab-spacing: 1rem 0.5rem;
+--tab-radius: none;
+--tab-active-shadow: none;
+--tab-transition: opacity 0.3s ease-in-out;
 ```
