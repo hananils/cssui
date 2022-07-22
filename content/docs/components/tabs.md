@@ -15,11 +15,11 @@ toc: true
 
 Click tabs to swap between content that is broken into logical sections. Tabs come with a horizontal navigation and a simple, clean style.
 
-<div class="preview">
-  <link rel="stylesheet" href="../cssui.css">
-  <link rel="stylesheet" href="tabs.css">
+<div class="preview" role="tablist" aria-label="Sample tabs">
+  <link rel="stylesheet" href="/cssui/cssui.min.css">
+  <link rel="stylesheet" href="/cssui/cssui.tabs.min.css">
 
-  <div data-tabs role="tablist" aria-label="Sample tabs">
+  <div data-tabs>
     <input id="tab1" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel1" checked="checked"/>
     <input id="tab2" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel2"/>
     <input id="tab3" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel3"/>
@@ -48,23 +48,23 @@ Tabs only require the following structure:
 
 ```html
 <div data-tabs role="tablist" aria-label="Sample tabs">
-  <input id="tab1" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel1" checked="checked"/>
-  <input id="tab2" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel2"/>
-  <input id="tab3" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel3"/>
-  <nav>
-    <label for="tab1" data-tab-label>First Tab</label>
-    <label for="tab2" data-tab-label>Second Tab</label>
-    <label for="tab3" data-tab-label>Third Tab</label>
-  </nav>
-  <section id="tab-panel1" data-tab-panel role="tabpanel" aria-labelledby="tab1">
-    First Tab Panel
-  </section>
-  <section id="tab-panel2" data-tab-panel role="tabpanel" aria-labelledby="tab2">
-    Second Tab Panel
-  </section>
-  <section id="tab-panel3" data-tab-panel role="tabpanel" aria-labelledby="tab3">
-    Third Tab Panel
-  </section>
+    <input id="tab1" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel1" checked="checked"/>
+    <input id="tab2" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel2"/>
+    <input id="tab3" type="radio" name="tab" data-tab role="tab" aria-controls="tab-panel3"/>
+    <nav>
+        <label for="tab1" data-tab-label>First Tab</label>
+        <label for="tab2" data-tab-label>Second Tab</label>
+        <label for="tab3" data-tab-label>Third Tab</label>
+    </nav>
+    <section id="tab-panel1" data-tab-panel role="tabpanel" aria-labelledby="tab1">
+        First Tab Panel
+    </section>
+    <section id="tab-panel2" data-tab-panel role="tabpanel" aria-labelledby="tab2">
+        Second Tab Panel
+    </section>
+    <section id="tab-panel3" data-tab-panel role="tabpanel" aria-labelledby="tab3">
+        Third Tab Panel
+    </section>
 </div>
 ```
 ## Accessibility
